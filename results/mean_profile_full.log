@@ -1,0 +1,231 @@
+/Users/helenalatorre/Desktop/msc-thesis-hla-mutation/libs/PGM/source/numba_utilities.py:1124: NumbaPerformanceWarning: [1m[1mnp.dot() is faster on contiguous arrays, called on (Array(float32, 2, 'F', False, aligned=True), Array(float32, 2, 'A', False, aligned=True))[0m[0m
+  dmean_v_dw = np.dot(s1.T, V)
+/Users/helenalatorre/Desktop/msc-thesis-hla-mutation/libs/PGM/source/numba_utilities.py:961: NumbaPerformanceWarning: [1m[1mnp.dot() is faster on contiguous arrays, called on (Array(float32, 1, 'A', False, aligned=True), Array(float32, 2, 'A', False, aligned=True))[0m[0m
+  mean_V = np.dot(weights, V) / sum_weights
+
+=== mode=pairs  n_units=40  quick=False ===
+68 alleles usable (model + ligands + entropy)
+2278 candidate pairs; selected 40 spanning JSD_corr_rbm = 0.031..0.692
+Loaded RBM for HLA-A*11:01: n_h=5, n_v=9
+Loaded RBM for HLA-A*11:02: n_h=5, n_v=9
+[transition] v_0 (HLA-A*11:01): VVVPPLPGK  E_A=-23.91
+[transition] v_T (HLA-A*11:02): ATLETILRH  E_B=-25.60
+Hamming distance (path length T): 9
+[ok] A1101->A1102: direct peak -5.36  global peak -5.58
+Loaded RBM for HLA-C*14:02: n_h=5, n_v=9
+Loaded RBM for HLA-C*14:03: n_h=5, n_v=9
+[transition] v_0 (HLA-C*14:02): RYLGKVLEL  E_A=-29.84
+[transition] v_T (HLA-C*14:03): AFPDGRSSF  E_B=-24.43
+Hamming distance (path length T): 9
+[ok] C1402->C1403: direct peak -4.32  global peak -4.32
+Loaded RBM for HLA-C*03:04: n_h=5, n_v=9
+Loaded RBM for HLA-C*03:03: n_h=5, n_v=9
+[transition] v_0 (HLA-C*03:04): FSVAVSPSL  E_A=-27.35
+[transition] v_T (HLA-C*03:03): VALPPGLAV  E_B=-24.74
+Hamming distance (path length T): 9
+[ok] C0304->C0303: direct peak -4.26  global peak -4.26
+Loaded RBM for HLA-A*24:02: n_h=10, n_v=9
+Loaded RBM for HLA-A*23:01: n_h=5, n_v=9
+[transition] v_0 (HLA-A*24:02): VLPESLPVL  E_A=-32.21
+[transition] v_T (HLA-A*23:01): SYLTQHQRI  E_B=-29.13
+Hamming distance (path length T): 9
+[ok] A2402->A2301: direct peak -4.51  global peak -4.65
+Loaded RBM for HLA-A*34:01: n_h=5, n_v=9
+Loaded RBM for HLA-A*66:01: n_h=5, n_v=9
+[transition] v_0 (HLA-A*34:01): EIIKKLIER  E_A=-27.36
+[transition] v_T (HLA-A*66:01): DTAPPSSAL  E_B=-24.26
+Hamming distance (path length T): 9
+[ok] A3401->A6601: direct peak -4.97  global peak -5.05
+Loaded RBM for HLA-C*08:02: n_h=10, n_v=9
+Loaded RBM for HLA-C*05:01: n_h=5, n_v=9
+[transition] v_0 (HLA-C*08:02): FAEASGLEL  E_A=-31.57
+[transition] v_T (HLA-C*05:01): VSDPVTVHF  E_B=-26.23
+Hamming distance (path length T): 9
+[ok] C0802->C0501: direct peak -3.55  global peak -3.55
+Loaded RBM for HLA-A*33:03: n_h=5, n_v=9
+Loaded RBM for HLA-A*33:01: n_h=5, n_v=9
+[transition] v_0 (HLA-A*33:03): NSNLVIHQR  E_A=-26.10
+[transition] v_T (HLA-A*33:01): SAPVGVTAL  E_B=-22.40
+Hamming distance (path length T): 9
+[ok] A3303->A3301: direct peak -1.37  global peak -2.20
+Loaded RBM for HLA-B*57:01: n_h=15, n_v=9
+Loaded RBM for HLA-B*57:03: n_h=5, n_v=9
+[transition] v_0 (HLA-B*57:01): PLPPPPPPP  E_A=-35.47
+[transition] v_T (HLA-B*57:03): KTLDLINKL  E_B=-20.88
+Hamming distance (path length T): 9
+[ok] B5701->B5703: direct peak -4.11  global peak -4.88
+Loaded RBM for HLA-B*58:01: n_h=5, n_v=9
+[transition] v_0 (HLA-B*57:01): PLPPPPPPP  E_A=-35.47
+[transition] v_T (HLA-B*58:01): SADKTVKLW  E_B=-26.31
+Hamming distance (path length T): 9
+[ok] B5701->B5801: direct peak -1.99  global peak -2.05
+[transition] v_0 (HLA-B*57:03): KTLDLINKL  E_A=-20.88
+[transition] v_T (HLA-B*58:01): VPPPPPPPP  E_B=-29.23
+Hamming distance (path length T): 9
+[ok] B5703->B5801: direct peak -2.54  global peak -3.41
+Loaded RBM for HLA-B*07:02: n_h=20, n_v=9
+Loaded RBM for HLA-B*42:01: n_h=5, n_v=9
+[transition] v_0 (HLA-B*07:02): PSPPPPPPP  E_A=-41.84
+[transition] v_T (HLA-B*42:01): APAAAGAAL  E_B=-30.32
+Hamming distance (path length T): 9
+[ok] B0702->B4201: direct peak -5.94  global peak -5.94
+Loaded RBM for HLA-B*27:02: n_h=5, n_v=9
+Loaded RBM for HLA-B*27:09: n_h=5, n_v=9
+[transition] v_0 (HLA-B*27:02): SRFGKFIQL  E_A=-25.94
+[transition] v_T (HLA-B*27:09): IRHDVIVTI  E_B=-23.93
+Hamming distance (path length T): 8
+[ok] B2702->B2709: direct peak -3.62  global peak -3.73
+Loaded RBM for HLA-B*27:07: n_h=5, n_v=9
+[transition] v_0 (HLA-B*27:02): SRFGKFIRI  E_A=-25.93
+[transition] v_T (HLA-B*27:07): RRLLLLPLL  E_B=-26.95
+Hamming distance (path length T): 8
+[ok] B2702->B2707: direct peak -4.60  global peak -5.24
+Loaded RBM for HLA-C*08:01: n_h=5, n_v=9
+[transition] v_0 (HLA-C*03:04): FSSPGGLSL  E_A=-27.60
+[transition] v_T (HLA-C*08:01): SAAEPTPAV  E_B=-24.84
+Hamming distance (path length T): 9
+[ok] C0304->C0801: direct peak -4.52  global peak -4.52
+Loaded RBM for HLA-A*03:01: n_h=5, n_v=9
+[transition] v_0 (HLA-A*03:01): ALLSPGSPK  E_A=-27.14
+[transition] v_T (HLA-A*11:02): GTSGLILKR  E_B=-22.93
+Hamming distance (path length T): 9
+[ok] A0301->A1102: direct peak -3.68  global peak -3.68
+Loaded RBM for HLA-A*02:01: n_h=20, n_v=9
+Loaded RBM for HLA-A*02:04: n_h=5, n_v=9
+[transition] v_0 (HLA-A*02:01): LAPPPPPAA  E_A=-38.96
+[transition] v_T (HLA-A*02:04): ALLELLERL  E_B=-29.21
+Hamming distance (path length T): 9
+[ok] A0201->A0204: direct peak -5.38  global peak -5.59
+Loaded RBM for HLA-A*02:03: n_h=5, n_v=9
+[transition] v_0 (HLA-A*02:01): LAPPPPPAA  E_A=-38.96
+[transition] v_T (HLA-A*02:03): ALKEKVTSL  E_B=-29.66
+Hamming distance (path length T): 9
+[ok] A0201->A0203: direct peak -2.62  global peak -3.18
+Loaded RBM for HLA-B*38:02: n_h=5, n_v=9
+Loaded RBM for HLA-B*15:10: n_h=5, n_v=9
+[transition] v_0 (HLA-B*38:02): TKIEIGDTI  E_A=-24.23
+[transition] v_T (HLA-B*15:10): GHSPPSSSL  E_B=-27.27
+Hamming distance (path length T): 9
+[ok] B3802->B1510: direct peak -4.03  global peak -4.28
+Loaded RBM for HLA-C*16:01: n_h=10, n_v=9
+Loaded RBM for HLA-C*12:03: n_h=5, n_v=9
+[transition] v_0 (HLA-C*16:01): AAYLRALSL  E_A=-33.48
+[transition] v_T (HLA-C*12:03): LTFPHPVYY  E_B=-27.23
+Hamming distance (path length T): 9
+[ok] C1601->C1203: direct peak -4.35  global peak -4.35
+Loaded RBM for HLA-A*02:07: n_h=10, n_v=9
+Loaded RBM for HLA-A*02:11: n_h=5, n_v=9
+[transition] v_0 (HLA-A*02:07): ALPPPPPAA  E_A=-33.58
+[transition] v_T (HLA-A*02:11): KVLEILHRV  E_B=-24.41
+Hamming distance (path length T): 9
+[ok] A0207->A0211: direct peak -4.44  global peak -4.88
+Loaded RBM for HLA-B*35:07: n_h=5, n_v=9
+Loaded RBM for HLA-B*35:03: n_h=5, n_v=9
+[transition] v_0 (HLA-B*35:07): HAADVFEAY  E_A=-26.03
+[transition] v_T (HLA-B*35:03): MPEEDPATL  E_B=-26.95
+Hamming distance (path length T): 9
+[ok] B3507->B3503: direct peak -3.79  global peak -4.29
+[transition] v_0 (HLA-A*33:01): DLLERLVQR  E_A=-24.21
+[transition] v_T (HLA-A*66:01): ETADITHAL  E_B=-23.03
+Hamming distance (path length T): 9
+[ok] A3301->A6601: direct peak -3.79  global peak -3.81
+Loaded RBM for HLA-A*02:06: n_h=5, n_v=9
+[transition] v_0 (HLA-A*02:07): ALPPPPPAA  E_A=-33.58
+[transition] v_T (HLA-A*02:06): QQIKELEKL  E_B=-28.58
+Hamming distance (path length T): 9
+[ok] A0207->A0206: direct peak -4.73  global peak -5.56
+[transition] v_0 (HLA-A*02:07): TVPPPPAAA  E_A=-30.09
+[transition] v_T (HLA-A*02:04): ALLELLERL  E_B=-29.21
+Hamming distance (path length T): 9
+[ok] A0207->A0204: direct peak -5.15  global peak -5.15
+Loaded RBM for HLA-C*12:02: n_h=15, n_v=9
+[transition] v_0 (HLA-C*12:02): AAAAAAAAA  E_A=-38.57
+[transition] v_T (HLA-C*03:04): VTVPPGPSL  E_B=-27.61
+Hamming distance (path length T): 9
+[ok] C1202->C0304: direct peak -4.52  global peak -4.52
+Loaded RBM for HLA-A*34:02: n_h=5, n_v=9
+[transition] v_0 (HLA-A*34:02): EVLEKLIEK  E_A=-26.87
+[transition] v_T (HLA-A*33:03): SSNLIIHQR  E_B=-29.80
+Hamming distance (path length T): 9
+[ok] A3402->A3303: direct peak -5.94  global peak -5.91
+Loaded RBM for HLA-C*04:01: n_h=5, n_v=9
+[transition] v_0 (HLA-C*05:01): AADEPVTVL  E_A=-28.05
+[transition] v_T (HLA-C*04:01): TFEDVAVHF  E_B=-30.68
+Hamming distance (path length T): 9
+[ok] C0501->C0401: direct peak -4.39  global peak -4.40
+Loaded RBM for HLA-B*15:02: n_h=20, n_v=9
+[transition] v_0 (HLA-B*15:02): PPPLPPPPP  E_A=-43.01
+[transition] v_T (HLA-C*04:01): TFEDVAVHF  E_B=-30.68
+Hamming distance (path length T): 9
+[ok] B1502->C0401: direct peak +0.18  global peak -0.82
+Loaded RBM for HLA-A*68:02: n_h=5, n_v=9
+[transition] v_0 (HLA-A*02:04): ALLELLERL  E_A=-29.21
+[transition] v_T (HLA-A*68:02): ETADVIAKV  E_B=-29.26
+Hamming distance (path length T): 9
+[ok] A0204->A6802: direct peak -5.21  global peak -5.38
+Loaded RBM for HLA-A*74:01: n_h=5, n_v=9
+[transition] v_0 (HLA-A*11:02): ATLETILRH  E_A=-25.60
+[transition] v_T (HLA-A*74:01): VLGPPPPPR  E_B=-29.52
+Hamming distance (path length T): 9
+[ok] A1102->A7401: direct peak -4.38  global peak -5.05
+Loaded RBM for HLA-B*08:01: n_h=5, n_v=9
+[transition] v_0 (HLA-B*08:01): ELQLRLLAL  E_A=-28.74
+[transition] v_T (HLA-B*42:01): LPPPPHPSV  E_B=-29.57
+Hamming distance (path length T): 9
+[ok] B0801->B4201: direct peak -3.79  global peak -4.55
+[transition] v_0 (HLA-C*12:03): FAADIISVL  E_A=-30.26
+[transition] v_T (HLA-A*02:06): TVVERLVKV  E_B=-27.23
+Hamming distance (path length T): 9
+[ok] C1203->A0206: direct peak -2.91  global peak -4.20
+[transition] v_0 (HLA-C*14:02): RFLDKALEL  E_A=-30.42
+[transition] v_T (HLA-C*04:01): IYDEAISSF  E_B=-24.55
+Hamming distance (path length T): 9
+[ok] C1402->C0401: direct peak -4.06  global peak -4.73
+[transition] v_0 (HLA-A*02:01): KLQEELERL  E_A=-39.16
+[transition] v_T (HLA-C*12:03): YAYPGVLLI  E_B=-28.58
+Hamming distance (path length T): 9
+[ok] A0201->C1203: direct peak -3.32  global peak -4.46
+[transition] v_0 (HLA-B*08:01): LLALRLLSL  E_A=-28.61
+[transition] v_T (HLA-C*08:01): VAVEPGAAV  E_B=-24.91
+Hamming distance (path length T): 9
+[ok] B0801->C0801: direct peak -4.72  global peak -4.17
+[transition] v_0 (HLA-B*15:02): PPPLPPPPP  E_A=-43.01
+[transition] v_T (HLA-A*02:11): ALLELLHEL  E_B=-26.36
+Hamming distance (path length T): 9
+[ok] B1502->A0211: direct peak -2.42  global peak -3.75
+Loaded RBM for HLA-C*06:02: n_h=5, n_v=9
+[transition] v_0 (HLA-B*07:02): PSPPPPPPP  E_A=-41.84
+[transition] v_T (HLA-C*06:02): SRAELVQLV  E_B=-28.64
+Hamming distance (path length T): 9
+[ok] B0702->C0602: direct peak -1.22  global peak -1.34
+[transition] v_0 (HLA-A*02:11): ALPPPPPAA  E_A=-27.63
+[transition] v_T (HLA-B*35:03): MPSEDVVSL  E_B=-26.94
+Hamming distance (path length T): 9
+[ok] A0211->B3503: direct peak -1.65  global peak -2.48
+Loaded RBM for HLA-B*40:06: n_h=5, n_v=9
+[transition] v_0 (HLA-A*02:04): ALLELLERL  E_A=-29.21
+[transition] v_T (HLA-B*40:06): KECGKAFTV  E_B=-31.51
+Hamming distance (path length T): 9
+[ok] A0204->B4006: direct peak -3.77  global peak -4.64
+[transition] v_0 (HLA-A*34:01): EIIKKLIER  E_A=-27.36
+[transition] v_T (HLA-B*27:07): GRTFLRVLL  E_B=-26.40
+Hamming distance (path length T): 9
+[ok] A3401->B2707: direct peak +0.53  global peak -1.56
+saved /Users/helenalatorre/Desktop/msc-thesis-hla-mutation/results/figures/poster_meanprofile_pairs.pdf / .png / .npz  (40 units)
+
+=== mode=endpoints  n_units=12  quick=False ===
+Loaded RBM for HLA-B*51:01: n_h=5, n_v=9
+Loaded RBM for HLA-B*27:05: n_h=5, n_v=9
+[ok] ep0: direct peak -4.04  global peak -5.54
+[ok] ep1: direct peak -2.87  global peak -4.11
+[ok] ep2: direct peak -4.69  global peak -5.11
+[ok] ep3: direct peak -1.24  global peak -3.44
+[ok] ep4: direct peak -2.72  global peak -4.89
+[ok] ep5: direct peak -4.54  global peak -4.77
+[ok] ep6: direct peak -3.88  global peak -4.68
+[ok] ep7: direct peak -4.57  global peak -4.57
+[ok] ep8: direct peak -3.49  global peak -4.55
+[ok] ep9: direct peak -2.39  global peak -4.42
+[ok] ep10: direct peak -4.19  global peak -4.37
+[ok] ep11: direct peak -0.62  global peak -4.28
+saved /Users/helenalatorre/Desktop/msc-thesis-hla-mutation/results/figures/poster_meanprofile_endpoints_b5101_b2705.pdf / .png / .npz  (12 units)

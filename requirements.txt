@@ -1,0 +1,11 @@
+numpy==1.26.4
+scipy==1.13.1
+pandas==2.2.2
+matplotlib==3.9.2
+scikit-learn==1.7.2
+logomaker==0.8.7
+seaborn==0.13.2
+numba==0.60.0
+pytest==7.4.4
+
+# mhcflurry pins an older numpy than this, so it goes in its own env

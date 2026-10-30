@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.DS_Store
+.venv/
+results/figures/*.pdf
+results/figures/*.png
+data/models/
+
+# PGM is cloned here, see the README
+libs/
+# sampler output
+results/paths/
+# supplied with the project, not redistributed (see README)
+data/df_jsd_total.csv
+data/df_E_total.csv
