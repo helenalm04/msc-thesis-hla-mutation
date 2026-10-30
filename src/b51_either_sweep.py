@@ -2,7 +2,11 @@
 # with B*51:01 but come out differently, B*27:05 a corridor and B*27:07 a
 # valley. Direct is sampled once, indirect over a grid of (slack, Lambda).
 #
-#     python -u src/b51_either_sweep.py --bulk     the full sweep
+# --bulk restricts the endpoints to peptides inside the bulk of the allele's
+# repertoire, rather than its lowest-energy ligands, which are outliers. That
+# is the run behind the corridor figure, and it writes its own _bulk table.
+#
+#     python -u src/b51_either_sweep.py --bulk
 
 import importlib.util
 import os
@@ -69,6 +73,9 @@ def natural_candidates(allele, df_ms, E_fn, anchors, top_frac=0.25):
     return [enc[i] for i in order[:cut] if int(enc[i][1]) in codes and _complex(enc[i])]
 
 
+# Drop endpoints that are atypical for the allele. Distance is measured in the
+# RBM's hidden space, standardised per unit, so the cut is on how far a peptide
+# sits from the centre of the real repertoire rather than on its energy.
 def in_bulk(cands, allele, df_ms, rbm, pct=90):
     '''Keep the candidates inside the given percentile of the repertoire.'''
     seqs = convert_number([x for x in df_ms[df_ms['MHC allele'] == allele]['Peptide']
