@@ -20,7 +20,7 @@ it is unpacked and nothing needs editing.
 
 ## Data
 
-`data/` holds what the analyses here actually read:
+`data/` holds what the analyses here read:
 
     proteome.txt                    human proteome, the background for random
                                     nonamers, from Yinfei Yang
@@ -29,8 +29,8 @@ it is unpacked and nothing needs editing.
     iedb/allele_supertypes.csv      supertype assignments
     iedb/000README.txt              the IEDB query that produced the export
 
-Two further tables are read but **not included here**, for the same reason as
-the models: they were supplied to the project rather than produced by it.
+Two further tables are read but not included here, for the same reason as
+the models, they were supplied to the project rather than produced by it.
 
     df_jsd_total.csv                pairwise Jensen-Shannon divergences
     df_E_total.csv                  per-allele entropies
@@ -67,7 +67,7 @@ so wants its own environment. It runs in three stages: `stage1`, then
 
     python -m pytest tests/
 
-The tests cover the three things the thesis argues for: that the sampler
+The tests cover the three things my thesis argues for: that the sampler
 reproduces the exact Boltzmann distribution, that the convergence diagnostics
 behind the Appendix table are correctly estimated, and that the mean-field solver
 agrees with the exact answer.
@@ -115,9 +115,9 @@ the bulk runs, which write their own tables.
 
 ## Attribution
 
-The RBM engine is Jerome Tubiana's PGM, used unmodified and **not redistributed
-here**. See the Environment section for how to obtain it. Its licence permits
-non-commercial use and asks that research using it be cited, which the thesis does
+The RBM engine is Jerome Tubiana's PGM, used unmodified and not redistributed
+here. See the Environment section for how to obtain it. Its licence permits
+non-commercial use and asks that research using it be cited, which my thesis does
 (Tubiana, Cocco and Monasson 2019, and the RBM-MHC pipeline of Bravi et al. 2021).
 
 The code here is MIT licensed, see `LICENSE`. That covers my own work only:
@@ -127,12 +127,12 @@ with.
 `entropy.py` was written by Yinfei Yang and came to this project with the
 models. It is used as it was received.
 
-The 68 RBM models the analyses read were **supplied with the project, not trained
-here**, and are not redistributed in this repository for that reason. No code here
+The 68 RBM models the analyses read were supplied with the project, not trained
+here, and are not redistributed in this repository for that reason. No code here
 fits them. `data/iedb/` is derived from IEDB (Vita et al.).
 
 Nothing in `data/` was produced by this code. `df_jsd_total.csv` and
 `df_E_total.csv` were supplied alongside the models and are not redistributed
-here; `proteome.txt` came from Yinfei Yang. Every script here only reads them.
+here, `proteome.txt` came from Yinfei Yang. Every script here only reads them.
 
 Everything under `src/` is my own work.
