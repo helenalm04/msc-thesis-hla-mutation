@@ -1,4 +1,4 @@
-# Chapter 4 robustness check. The thesis scores a node by min(E_A, E_B), so
+# Chapter 4 robustness check. My thesis scores a node by min(E_A, E_B), so
 # this reruns the escape-route numbers with a smooth version of that minimum
 # and shows the direct-to-indirect gap does not move.
 

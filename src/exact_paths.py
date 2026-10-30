@@ -262,7 +262,7 @@ def exact_direct_ensemble(s0, sT, E_A_fn, E_B_fn=None, beta=1.0,
     }
 
 
-# the ensemble printed as a block, for the logs the thesis tables are read off
+# the ensemble printed as a block, for the logs behind my thesis tables
 def format_report(res, barrier=None):
     D = res['D']
     lines = [

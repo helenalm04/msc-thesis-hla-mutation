@@ -1,6 +1,6 @@
 # Mutational paths between HLA-I binding landscapes
 
-Code for the MSc thesis *Mutational paths between HLA-I binding landscapes*. RBM
+Code for my MSc thesis *Mutational paths between HLA-I binding landscapes*. RBM
 landscapes for 68 HLA-I alleles, a Markov chain sampler over paths in peptide
 space, and the scans and plotting scripts behind the results chapters.
 
@@ -30,7 +30,7 @@ it is unpacked and nothing needs editing.
     iedb/000README.txt              the IEDB query that produced the export
 
 Two further tables are read but not included here, for the same reason as
-the models, they were supplied to the project rather than produced by it.
+the models, they were supplied to me rather than produced by this code.
 
     df_jsd_total.csv                pairwise Jensen-Shannon divergences
     df_E_total.csv                  per-allele entropies
@@ -40,8 +40,8 @@ them, and neither does anything under `src/figures/` that reads only `results/`.
 
 ## The RBM models
 
-The analyses read 68 allele-specific RBMs that were supplied to the project
-already trained.
+The analyses read 68 allele-specific RBMs that were supplied to me already
+trained.
 
 ## Environment
 
@@ -124,15 +124,16 @@ The code here is MIT licensed, see `LICENSE`. That covers my own work only:
 the files noted below came from elsewhere and keep whatever terms they arrived
 with.
 
-`entropy.py` was written by Yinfei Yang and came to this project with the
-models. It is used as it was received.
+`entropy.py` was written by Yinfei Yang and came to me with the models. I use
+it as I received it.
 
-The 68 RBM models the analyses read were supplied with the project, not trained
-here, and are not redistributed in this repository for that reason. No code here
-fits them. `data/iedb/` is derived from IEDB (Vita et al.).
+The 68 RBM models the analyses read were supplied to me, not trained here, and
+I do not redistribute them for that reason. No code here fits them.
+`data/iedb/` is derived from IEDB (Vita et al.).
 
 Nothing in `data/` was produced by this code. `df_jsd_total.csv` and
-`df_E_total.csv` were supplied alongside the models and are not redistributed
-here, `proteome.txt` came from Yinfei Yang. Every script here only reads them.
+`df_E_total.csv` were supplied alongside the models and I do not redistribute
+them here, `proteome.txt` came from Yinfei Yang. Every script here only reads
+them.
 
 Everything under `src/` is my own work.
