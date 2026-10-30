@@ -1,9 +1,8 @@
 # Chapter 6, the sweep over what a mutation costs, to find where each route
 # stops being available. Three systems: a pair whose anchors conflict, a
 # same-supertype pair, and a single allele as a control with no second motif
-# to cross to. Run twice, since the anneal could be shaping the result:
-#
-#     python -u src/scans/scan_direct_global_transition.py [--fixed-beta]
+# to cross to. Run twice, plain and then with --fixed-beta, since the anneal
+# could otherwise be shaping the result.
 
 import os
 import sys

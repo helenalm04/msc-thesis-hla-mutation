@@ -5,8 +5,6 @@
 # --bulk restricts the endpoints to peptides inside the bulk of the allele's
 # repertoire, rather than its lowest-energy ligands, which are outliers. That
 # is the run behind the corridor figure, and it writes its own _bulk table.
-#
-#     python -u src/b51_either_sweep.py --bulk
 
 import importlib.util
 import os

@@ -1,9 +1,8 @@
 # Chapter 5, the B*51:01 to B*27:05 case study: the PCA and specificity
 # scatters, the energy profile, and the order the positions change in. The
-# drawing itself lives in src/data_explore.py. The allele pair and endpoints
-# come from the environment, so this covers the chapter's other pairs too:
-#
-#     TL_ALLELE_B='HLA-B*27:07' TL_LABEL=... python src/figures/plot_transition_landscape.py
+# drawing itself lives in src/data_explore.py. The allele pair, the endpoints
+# and the output label are read from TL_ALLELE_A, TL_ALLELE_B, TL_V0, TL_VT and
+# TL_LABEL, so the same script covers the chapter's other pairs.
 
 import os
 import sys

@@ -1,8 +1,6 @@
 # Stage 2 of the Appendix calibration, run on its own under the MHCflurry
 # environment: stage 1 of calibrate_presented_threshold.py writes the
 # peptides, this scores them, and stage 3 reads the scores back.
-#
-#     python src/scans/_mhcflurry_score.py <in.csv> <out.csv>
 
 import sys
 import pandas as pd

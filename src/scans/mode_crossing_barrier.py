@@ -2,9 +2,8 @@
 # second allele involved. The same paths are scored under the RBM and under a
 # PWM fitted to the same ligands: a PWM treats the positions as independent
 # and cannot represent two modes at all, so the barrier is there under one
-# and absent under the other.
-#
-#     MCB_ALLELE='HLA-B*27:05' python -u src/scans/mode_crossing_barrier.py
+# and absent under the other. The allele is set by MCB_ALLELE, since the
+# chapter reports two.
 
 import os, sys
 import numpy as np, pandas as pd

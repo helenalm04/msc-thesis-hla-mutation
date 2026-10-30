@@ -1,9 +1,6 @@
-# The claim the thesis rests on: the chain samples the Boltzmann distribution
-# over paths. Each test builds a case small enough to enumerate, works out the
-# exact probabilities, then runs the sampler and compares. _restricted_energy
-# keeps those cases small by pricing residues out of reach rather than
-# forbidding them, so the chain stays ergodic and the test can check that
-# almost no probability escaped.
+# The chain samples the Boltzmann distribution over paths. Each test builds a
+# case small enough to enumerate every path, works out the exact
+# probabilities, then runs the sampler and compares them one by one.
 
 import itertools
 import os

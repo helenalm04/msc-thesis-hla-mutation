@@ -1,8 +1,6 @@
 # Chapter 4, the scan across allele pairs. Pairs are spread evenly over the
 # range of pairwise JSD rather than drawn at random, which would cluster them
 # wherever that distribution is densest, and each gets one summary row.
-#
-#     python -u src/scan_pairs.py
 
 import argparse
 import importlib.util

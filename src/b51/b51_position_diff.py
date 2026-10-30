@@ -4,8 +4,6 @@
 #
 # --bulk restricts the endpoints to the bulk of the repertoire, as in
 # b51_either_sweep.py, and is the run the figure uses.
-#
-#     python -u src/b51/b51_position_diff.py --bulk
 
 import os
 import sys

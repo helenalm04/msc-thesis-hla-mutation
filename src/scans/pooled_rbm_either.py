@@ -1,9 +1,8 @@
 # Chapter 4 control for the 'either' score. Scoring a peptide as the better of
 # two separately fitted models is not the same as fitting one model to both
 # repertoires pooled, so this trains that pooled RBM and compares it against
-# the two shipped models on held out ligands. The one script here that fits.
-#
-#     PAIR_A='HLA-A*02:01' PAIR_B='HLA-A*02:04' python -u src/scans/pooled_rbm_either.py
+# the two shipped models on held out ligands. The one script here that fits a
+# model rather than loading one. The allele pair is set by PAIR_A and PAIR_B.
 
 import os, sys, glob, time, argparse, importlib.util, re
 import numpy as np, pandas as pd

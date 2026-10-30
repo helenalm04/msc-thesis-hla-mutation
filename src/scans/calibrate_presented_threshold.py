@@ -5,10 +5,6 @@
 #
 # MHCflurry pins an older numpy, so this runs in three stages. Both
 # intermediate files ship, so stage1 and stage3 can be rerun alone.
-#
-#     python src/scans/calibrate_presented_threshold.py stage1
-#     python src/scans/_mhcflurry_score.py <in> <out>      under MHCflurry
-#     python src/scans/calibrate_presented_threshold.py stage3
 
 import os
 import sys

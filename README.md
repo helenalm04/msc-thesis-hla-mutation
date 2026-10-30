@@ -106,12 +106,12 @@ recomputing. A few need more than that:
     src/scans/mode_crossing_barrier.py           allele set by the MCB_ALLELE variable
     src/b51_either_sweep.py                      --bulk for the sweep behind fig:b51_corridor
     src/b51/b51_position_diff.py                 --bulk likewise
+    src/scans/calibrate_presented_threshold.py   stage1 and stage3, see above
+    src/scans/scan_detour_vs_overlap.py          reads the output of src/figures/mean_profile.py
 
 `--bulk` picks endpoints from inside the bulk of an allele's repertoire instead
 of from its lowest-energy ligands, which sit at the edge of it. Both figures use
 the bulk runs, which write their own tables.
-    src/scans/calibrate_presented_threshold.py   stage1 and stage3, see above
-    src/scans/scan_detour_vs_overlap.py          reads the output of src/figures/mean_profile.py
 
 ## Attribution
 
